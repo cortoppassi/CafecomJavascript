@@ -1,0 +1,92 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97%;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#navbar ul li {
+  margin-left: 10px;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  color: #ff0000;
+}
+
+#burguer {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    display: none;
+  }
+
+  #burguer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #burguer svg {
+    font-size: 24px;
+    color: #333333;
+  }
+
+  #burguer svg:hover {
+    color: #ff0000;
+  }
+
+  .responsive-nav {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .responsive-nav li {
+    margin-top: 10px;
+  }
+
+  .responsive-nav li a {
+    font-size: 14px;
+    color: #333333;
+  }
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+}

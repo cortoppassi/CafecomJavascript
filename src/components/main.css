@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+Main {
+    color: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 20%;
+    margin: 30px;
+    left: 0;
+
+    display: block;
+}
+
+
+section {
+    gap: 10px;
+}
