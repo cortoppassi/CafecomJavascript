@@ -1,22 +1,39 @@
-* {
-    margin: 0;
-    padding: 0;
+#main {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  #div01 {
+    margin-top: 60px;
+    width: 100%;
+    background-color: #242424;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px; /* Adicione padding para espaçamento entre a imagem e o texto */
+}
+
+#div01 h4 {
+    text-align: left; /* Ajuste o alinhamento do texto para a esquerda */
+}
+
+#div01 img {
+    width: 200px; /* ou qualquer tamanho desejado */
 }
 
 
-
-Main {
-    color: #fff;
-    border-radius: 3px;
-    position: absolute;
-    top: 20%;
-    margin: 30px;
-    left: 0;
-
-    display: block;
-}
-
-
-section {
-    gap: 10px;
-}
+  
+  #div02 {
+    width: 100%;
+    background-color: #3d3d3d;
+    height: 100vh;
+  }
+  
+  #div03 {
+    width: 100%;
+    background-color: #5b5b5b;
+    height: 100vh;
+  }
+  

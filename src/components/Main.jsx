@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Pokemon from "./Pokemon";
 import React from "react";
 import './main.css';
 
@@ -31,15 +32,18 @@ const Main = () => {
     
     return (
         <div id="main">
-            <main>
+            <div id="div01">
+            <Pokemon/>
             <h4>{texto}</h4>
-            </main>
-            <sobre>
-              sobre
-            </sobre>
-            <portfolio>
-              portifolio
-            </portfolio>
+            </div>
+
+            <div id="div02">
+            
+            </div>
+            
+            <div id="div03">
+           
+            </div>
         </div>
     );
 };
