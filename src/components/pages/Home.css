@@ -1,0 +1,29 @@
+* {
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.apresentacao {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #f5f5f5;;
+  color: #000;
+}
+
+.ide {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #f5f5f5;
+}

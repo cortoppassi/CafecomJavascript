@@ -1,23 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
+import { createBrowserHistory } from "history";
 import Coding from "./Coding";
 import { IoIosCafe, IoLogoJavascript } from 'react-icons/io';
 import { AiOutlineMenu } from 'react-icons/ai';
-import './header.css'
-import './main.css';
+import './Navbar.css';
+import './pages/Home.css';
 
-export default function Header() {
+export default function Navbar() {
+    const history = createBrowserHistory();
 
-    const home = () => {
-        console.log('home')
-    }
-
-    const sobre = () => {
-        console.log('Sobre')
-    }
-
-    const portfolio = () => {
-        console.log('Portifolio')
-    }
+    const handleItemClick = (route) => {
+        history.push(route);
+    };
 
     return (
         <div>
@@ -30,9 +24,9 @@ export default function Header() {
                 <div>
                     <nav id="navbar">
                         <ul>
-                            <li><a href="#home" onClick={home}>Home</a></li>
-                            <li><a href="#sobre" onClick={sobre}>Sobre</a></li>
-                            <li><a href="#portfolio" onClick={portfolio}>Portfolio</a></li>
+                            <li><a href="#home" onClick={() => handleItemClick("/CafecomJavascript")}>Home</a></li>
+                            <li><a href="#sobre" onClick={() => handleItemClick("/sobre")}>Sobre</a></li>
+                            <li><a href="#portfolio" onClick={() => handleItemClick("/portfolio")}>Portfolio</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -41,9 +35,6 @@ export default function Header() {
                     <AiOutlineMenu />
                 </nav>
             </header>
-            <div className="container">
-            
-            </div>    
         </div>
     );
 };

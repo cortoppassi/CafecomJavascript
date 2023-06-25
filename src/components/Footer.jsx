@@ -1,4 +1,5 @@
 import React from "react";
+import ChatWidget from "./ChatWidget";
 import { RxInstagramLogo, RxLinkedinLogo, RxGithubLogo} from 'react-icons/rx';
 
 import './footer.css'
@@ -18,6 +19,7 @@ export default function Footer() {
                     <RxGithubLogo/>
                 </a>
             </footer>
+            <ChatWidget/>
         </div>
     );
 };

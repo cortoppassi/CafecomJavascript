@@ -1,0 +1,32 @@
+.chat-widget {
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.chat-history {
+  margin-top: 20px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.user {
+  color: #fff;
+}
+
+.ChatGPT {
+  color: #fff;
+}
+
+.author {
+  font-weight: bold;
+}
+
+.content {
+  margin-left: 5px;
+}
+
+  

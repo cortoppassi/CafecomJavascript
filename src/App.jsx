@@ -1,7 +1,8 @@
-import { useState } from 'react'
-import Header from './components/Header'
-import Main from './components/Main'
-import Footer from './components/Footer'
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/pages/Home';
+import Portfolio from './components/pages/Portfolio';
+import Sobre from './components/pages/Sobre';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -9,15 +10,17 @@ function App() {
   const handleMenuClick = (page) => {
     setCurrentPage(page);
   };
-  return (
-    <>
-      <div>
-        <Header onMenuClick={handleMenuClick} />
-        <Main currentPage={currentPage} />
-        <Footer/>
-      </div>
-    </>
-  );
-};
 
-export default App
+  return (
+    <Router>
+      <Routes>
+        <Route path="/CafecomJavascript" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/sobre" element={<Sobre />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+
