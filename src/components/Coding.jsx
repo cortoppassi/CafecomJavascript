@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import "./Coding.css"
 const Coding = () => {
   const [texto, setTexto] = useState('');
 
@@ -19,7 +19,13 @@ const Coding = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return <h1>{texto}</h1>;
+  return (
+    <div className='coding'>
+      <h1 id='coding'>{texto}</h1>
+    </div>
+    
+  )
+  
 };
 
 export default Coding;

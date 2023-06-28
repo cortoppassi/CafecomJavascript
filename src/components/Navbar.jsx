@@ -17,7 +17,7 @@ export default function Navbar() {
         <div>
             <header>
                 <div id="logo" className="navbar visible">
-                    <IoIosCafe /><h1>+</h1> <IoLogoJavascript/><h1>=</h1>
+                    <IoIosCafe /><h1 id='coding'>+</h1> <IoLogoJavascript/><h1 id='coding'>=</h1>
                     <Coding/>
                 </div>
                
