@@ -26,8 +26,8 @@ const ChatWidget = () => {
     <div className="chat-widget">
       <Widget
         handleNewUserMessage={handleNewUserMessage}
-        title="Chat"
-        subtitle="Componente de chat"
+        title="ChatGPT"
+        subtitle=""
       />
       <div className="chat-history">
         {messages.map((message, index) => (
